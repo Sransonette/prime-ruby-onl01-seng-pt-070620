@@ -4,8 +4,10 @@ def prime?(num)
   end
   i = 2
   while i < num
-    return false if num % i == 0
-    i += 1
+    if num % i == 0
+     return false 
+    end
+  i += 1
   end
   true
 end
